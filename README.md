@@ -1,5 +1,6 @@
 # BillSense
 
+This project is "vibe-coded" for most of the boilerplates including db schema for v0.1.1. Each and every line will be reviewed for further versions.
 A web application that simplifies bill splitting by using OCR to scan receipts, extract itemized data, and provide an intuitive interface for users to assign items to different people for accurate cost calculation.
 
 ## Features
