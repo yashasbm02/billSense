@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calculator, Share2, Download, Copy, Check } from 'lucide-react';
-import { SplitCalculation, Bill } from '@billsense/shared';
+import { SplitCalculation, Bill } from '../types/bill.types';
 import { formatCurrency, cn, getInitials, getRandomColor } from '../utils';
 import toast from 'react-hot-toast';
 

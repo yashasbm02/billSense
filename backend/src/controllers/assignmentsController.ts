@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import pool from '../database/connection';
-import { CreateAssignmentRequest } from '@billsense/shared';
+import { CreateAssignmentRequest } from '../types/bill.types';
 import { CalculationService } from '../services/calculationService';
 
 export class AssignmentsController {

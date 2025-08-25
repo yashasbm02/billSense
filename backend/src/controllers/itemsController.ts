@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import pool from '../database/connection';
-import { CreateBillItemRequest } from '@billsense/shared';
+import { CreateBillItemRequest } from '../types/bill.types';
 
 export class ItemsController {
   static async getBillItems(req: Request, res: Response): Promise<void> {

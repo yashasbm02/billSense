@@ -1,3 +1,5 @@
+// Backend-specific types for BillSense
+
 export interface User {
   id: number;
   name: string;
@@ -106,31 +108,6 @@ export interface CalculateSplitsRequest {
   bill_id: number;
   include_tax: boolean;
   include_tip: boolean;
-}
-
-// Frontend Component Props Types
-export interface BillScannerProps {
-  onScanComplete: (result: BillScanResult) => void;
-  onError: (error: string) => void;
-}
-
-export interface ItemDisplayProps {
-  items: BillItem[];
-  assignments: ItemAssignment[];
-  participants: BillParticipant[];
-  onItemEdit: (item: BillItem) => void;
-  onAssignmentChange: (itemId: number, participantId: number, percentage: number) => void;
-}
-
-export interface ParticipantManagerProps {
-  participants: BillParticipant[];
-  onAddParticipant: (participant: CreateParticipantRequest) => void;
-  onRemoveParticipant: (participantId: number) => void;
-}
-
-export interface SplitResultsProps {
-  splits: SplitCalculation[];
-  bill: Bill;
 }
 
 // Error Types

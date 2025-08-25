@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, X, User, Mail } from 'lucide-react';
-import { BillParticipant, CreateParticipantRequest } from '@billsense/shared';
+import { BillParticipant, CreateParticipantRequest } from '../types/bill.types';
 import { cn, getInitials, getRandomColor } from '../utils';
 import toast from 'react-hot-toast';
 

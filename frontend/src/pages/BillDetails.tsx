@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Calculator, Edit2, Trash2, Share2 } from 'lucide-react';
-import { Bill, BillItem, BillParticipant, ItemAssignment, SplitCalculation } from '@billsense/shared';
+import { Bill, BillItem, BillParticipant, ItemAssignment, SplitCalculation } from '../types/bill.types';
 import ItemDisplay from '../components/ItemDisplay';
 import ParticipantManager from '../components/ParticipantManager';
 import SplitResults from '../components/SplitResults';
