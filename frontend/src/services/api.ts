@@ -10,7 +10,7 @@ import {
   CreateParticipantRequest,
   CreateAssignmentRequest,
   SplitCalculation
-} from '@billsense/shared';
+} from '../types/bill.types';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 

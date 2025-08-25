@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, Save, Plus, Edit2 } from 'lucide-react';
-import { BillScanResult, CreateBillItemRequest } from '@billsense/shared';
+import { BillScanResult, CreateBillItemRequest } from '../types/bill.types';
 import BillScanner from '../components/BillScanner';
 import ParticipantManager from '../components/ParticipantManager';
 import { billsAPI } from '../services/api';

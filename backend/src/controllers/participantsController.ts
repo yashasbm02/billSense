@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import pool from '../database/connection';
-import { CreateParticipantRequest } from '@billsense/shared';
+import { CreateParticipantRequest } from '../types/bill.types';
 
 export class ParticipantsController {
   static async getBillParticipants(req: Request, res: Response): Promise<void> {

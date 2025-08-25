@@ -1,5 +1,5 @@
 import Tesseract from 'tesseract.js';
-import { BillScanResult } from '@billsense/shared';
+import { BillScanResult } from '../types/bill.types';
 
 export class OCRService {
   private static instance: OCRService;

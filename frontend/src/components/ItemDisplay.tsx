@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Edit2, Trash2, Users, DollarSign } from 'lucide-react';
-import { BillItem, BillParticipant, ItemAssignment } from '@billsense/shared';
+import { BillItem, BillParticipant, ItemAssignment } from '../types/bill.types';
 import { formatCurrency, cn, getInitials, getRandomColor } from '../utils';
 
 interface ItemDisplayProps {
@@ -153,7 +153,7 @@ const ItemDisplay: React.FC<ItemDisplayProps> = ({
                           className="flex items-center space-x-1 bg-gray-100 rounded-full px-2 py-1 text-xs"
                         >
                           <div className={cn("participant-avatar h-4 w-4 text-xs", getRandomColor())}>
-                            {getInitials(participant.name)}
+                            {getInitials(participant.name || "Unknown")}
                           </div>
                           <span className="font-medium">{participant.name}</span>
                           {participant.percentage < 100 && (
@@ -194,7 +194,7 @@ const ItemDisplay: React.FC<ItemDisplayProps> = ({
                               "participant-avatar h-5 w-5 text-xs",
                               isAssigned ? "bg-primary-600" : getRandomColor()
                             )}>
-                              {getInitials(participant.name)}
+                              {getInitials(participant.name || "Unknown")}
                             </div>
                             <span className="truncate">{participant.name}</span>
                           </button>

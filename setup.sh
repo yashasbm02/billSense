@@ -18,10 +18,6 @@ createdb billsense 2>/dev/null || echo "Database 'billsense' already exists"
 echo "🗄️  Setting up database schema..."
 psql -d billsense -f database/schema.sql
 
-# Build shared types
-echo "🔧 Building shared types..."
-cd shared && npm run build && cd ..
-
 # Build backend
 echo "🏗️  Building backend..."
 cd backend && npm run build && cd ..

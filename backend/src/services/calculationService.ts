@@ -1,4 +1,4 @@
-import { BillSplit, ItemAssignment, BillItem, BillParticipant, SplitCalculation } from '@billsense/shared';
+import { BillSplit, ItemAssignment, BillItem, BillParticipant, SplitCalculation } from '../types/bill.types';
 import pool from '../database/connection';
 
 export class CalculationService {

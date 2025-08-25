@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Receipt, Users, Calculator, Clock, ArrowRight } from 'lucide-react';
-import { Bill } from '@billsense/shared';
+import { Bill } from '../types/bill.types';
 import { billsAPI } from '../services/api';
 import { formatCurrency, formatDate } from '../utils';
 import toast from 'react-hot-toast';

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { ApiError } from '@billsense/shared';
+import { ApiError } from '../types/bill.types';
 
 export const errorHandler = (
   error: Error,

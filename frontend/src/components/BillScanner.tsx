@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { Camera, Upload, X, AlertCircle } from 'lucide-react';
-import { BillScanResult } from '@billsense/shared';
+import { BillScanResult } from '../types/bill.types';
 import { ocrAPI } from '../services/api';
 import { cn } from '../utils';
 import toast from 'react-hot-toast';
